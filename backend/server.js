@@ -20,9 +20,6 @@ const pool = mysql.createPool({
   user: "root",
   password: "iIUzLn412eZj0HXZxook",
   database: "railway",
-  //   waitForConnections: true,
-  //   connectionLimit: 10,
-  //   queueLimit: 0,
 });
 
 // Get all users
@@ -85,12 +82,6 @@ app.post("/save", (req, res) => {
       res.status(500).send("Error writing file");
     } else {
       res.send("File written successfully");
-      // exec("E:/task/CV2/bot.bat", (error) => {
-      //   if (error) {
-      //     console.error(`Error: ${error}`);
-      //     return;
-      //   }
-      // });
     }
   });
 });
