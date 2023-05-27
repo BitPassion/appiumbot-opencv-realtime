@@ -1,0 +1,1 @@
+py E:/task/CV2/main1.py
